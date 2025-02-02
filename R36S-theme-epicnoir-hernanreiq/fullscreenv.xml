@@ -1,0 +1,386 @@
+<!--
+Theme name:  Epic Noir
+Artwork by:  Nico La Rosa (Chicuelo) 
+Coding by:   Nick L (c64-dev)
+Website:     www.chicuelo.com.ar
+Fonts used:  Acre Medium & Bebas Neue Bold
+
+# Thanks and Credits
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+    <image name="background" extra="true">
+        <path>./_art/var/dot.png</path>
+        <tile>false</tile>
+        <size>1 1</size>
+        <pos>0 0</pos>
+        <origin>0 0</origin>
+    </image>
+      
+    <image name="poster" extra="true">
+        <path>./_art/posters/${system.theme}.jpg</path>
+        <path>./_art/posters/${system.theme}.png</path>
+        <tile>false</tile>
+        <origin>1 0</origin>
+        <pos>1 0</pos>
+        <size>0 1</size>
+    </image>
+
+    <carousel name="systemcarousel">
+        <color>00000000</color>
+        <origin>1 1</origin>
+        <pos>1 1</pos>
+        <size>0.01 0.01</size>
+        <logoScale>1</logoScale>
+        <logoSize>0.01 0.01</logoSize>
+        <maxLogoCount>0</maxLogoCount>
+    </carousel>
+    
+    <text name="sys_line1" extra="true">
+        <fontPath>./_art/BebasNeue.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>1</forceUppercase>
+        <color>FFFFFF</color>
+		<fontSize>0.048</fontSize>
+        <origin>0 0</origin>
+        <pos>0.00 0.142</pos>
+        <size>0 0</size>
+    </text>
+    
+    <text name="sys_line2" extra="true">
+        <fontPath>./_art/BebasNeue.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>1</forceUppercase>
+		<fontSize>0.18</fontSize>
+        <origin>0 0</origin>
+        <pos>0.00 0.16</pos>
+        <size>0 0</size>
+        <color>FFFFFF</color>
+    </text>
+
+    <text name="shortdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.025</fontSize>
+        <color>ffffff</color>
+        <origin>0 0</origin>
+        <pos>0.003 0.1055</pos>
+        <size>0.35 0.033</size>
+    </text>
+
+    <text name="systemInfo">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <backgroundColor>00000000</backgroundColor>
+        <forceUppercase>1</forceUppercase>
+        <color>A3332D</color>
+        <origin>0 0</origin>
+        <pos>0.003 0.6</pos>
+        <size>0.400 0.039</size>
+        <fontSize>0.0315</fontSize>
+    </text>
+    
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.026</fontSize>
+        <color>ffffff</color>
+ 	    <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.003 0.70</pos>
+        <size>0.28 0.20</size>
+    </text>
+
+    <helpsystem name="help">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <fontSize>0.02</fontSize>
+        <origin>1 1</origin><!--0 0-->
+        <pos>0 0</pos> <!--0.0890 0.6283-->
+        <textColor>ffffff</textColor>
+        <iconColor>ffffff</iconColor>
+    </helpsystem>
+
+    <image name="controller" extra="true">
+        <path>./_art/controllers/${system.theme}.png</path>
+        <tile>false</tile>
+        <origin>0 0</origin>
+        <pos>0.35 0.65</pos>
+        <maxSize>0.32 0.32</maxSize>
+    </image>
+</view>
+
+<view name="basic, detailed, video">
+
+    <image name="background" extra="true">
+        <tile>false</tile>
+        <path>./_art/ingame-global-bg.jpg</path>
+        <size>1 1</size>
+        <pos>0 0</pos>
+    </image>
+
+    <textlist name="gamelist">
+        <selectorColor>1c1c1c</selectorColor>
+        <selectedColor>ffffff</selectedColor>
+        <selectorHeight>0.05</selectorHeight>
+        <primaryColor>585858</primaryColor>
+        <secondaryColor>888888</secondaryColor>
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <pos>0 0.0833</pos>
+	    <size>0.323 0.8513</size>
+        <fontSize>0.032</fontSize>
+        <lineSpacing>1.683</lineSpacing>
+        <horizontalMargin>0.02864</horizontalMargin>
+    </textlist>
+	
+	<helpsystem name="help">
+        <pos>1 .98</pos>
+	    <origin>1 1</origin>
+        <textColor>ffffff</textColor>
+        <iconColor>ffffff</iconColor>
+    </helpsystem>
+    
+    <text name="top_label" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <text>Select Game</text>
+        <alignment>left</alignment>
+        <color>F8F8F8</color>
+		<pos>0.029 0</pos>
+        <fontSize>0.034</fontSize>
+        <origin>0 0</origin>
+        <size>0.20 0.08</size>
+    </text>
+    
+    <text name="nameLabel" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>1</forceUppercase>
+        <color>ffffff</color>
+        <fontSize>0.036</fontSize>
+        <origin>0 0</origin>
+        <pos>0.429 0</pos>
+        <size>0.40 0.075</size>
+    </text>
+
+    <text name="md_description">
+        <fontPath>./_art/Acre.otf</fontPath>
+	    <color>ffffff</color>
+        <fontSize>0.032</fontSize>
+	    <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <lineSpacing>1</lineSpacing>
+	    <pos>0.429 0.77</pos>
+	    <size>0.47 0.16</size>
+    </text>
+    
+<!-- Define metadata -->
+
+<!-- Place metadata --> 
+        
+<!-- Extra Text Labels. Edit text values if needed.-->       
+
+    <text name="txt_descript" extra="true">
+        <text>Description</text>
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <fontSize>0.02</fontSize>
+        <color>ffffff</color>
+        <origin>0 0</origin>
+        <pos>0.429 0.630</pos>
+        <size>0.06 0.2</size>
+    </text> 
+        
+<!-- Hidden Elements -->
+ 
+    <text name="shortdescription, longdescription" extra="true">
+        <origin>1 1</origin>
+        <pos>0 0</pos>
+        <color>00000000</color>
+    </text>
+        
+    <text name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
+        <origin>1 1</origin>
+        <color>00000000</color>
+        <pos>0 0</pos>
+    </text>
+	
+	 <rating name="md_rating">
+		 <visible>false</visible>
+     </rating>
+	 
+	 <text name="md_lbl_rating">
+		 <visible>false</visible>
+     </text> 
+	 
+    <datetime name="md_releasedate, md_lastplayed">
+        <origin>1 1</origin>
+        <color>00000000</color>
+        <pos>0 0</pos>
+        </datetime>
+        
+</view>
+
+<view name="basic, detailed">
+    <image name="md_image">
+        <tile>false</tile>
+        <origin>0.5 0.5</origin>
+        <pos>0.66 0.42</pos>
+        <maxSize>0.5 0.6</maxSize>
+    </image>
+</view>
+
+<view name="grid">
+	
+    <imagegrid name="gamegrid">
+		<margin>0.050 0.010</margin>
+        <pos>0.025 0.4</pos>
+        <size>0.970 0.86</size>
+	    <scrollDirection>horizontal</scrollDirection>
+		<autoLayout>5 1</autoLayout>
+		<autoLayoutSelectedZoom>1.00</autoLayoutSelectedZoom>
+		<centerSelection>true</centerSelection>
+		<scrollLoop>true</scrollLoop>
+    </imagegrid>
+	
+    <text name="gridtile">
+        <color>00000000</color>
+        <backgroundColor>00000000</backgroundColor>
+        <fontPath>./_art/AdobeBlank.ttf</fontPath>
+        <fontSize>0.01</fontSize>
+	    <alignment>center</alignment>
+	    <visible>false</visible>
+    </text>
+	
+    <ninepatch name="gridtile.background:selected">
+      <animateColor>FFFFFF</animateColor>
+      <animateColorTime>800</animateColorTime>
+    </ninepatch>
+
+    <image name="poster" extra="true">
+        <path>./_art/posters/${system.theme}.jpg</path>
+        <path>./_art/posters/${system.theme}.png</path>
+        <tile>false</tile>
+        <origin>1 0</origin>
+        <pos>1 0</pos>
+        <size>0 1</size>
+    </image>
+	
+    <helpsystem name="help">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <fontSize>0.02</fontSize>
+        <origin>1 1</origin><!--0 0-->
+        <pos>0 0</pos> <!--0.0890 0.6283-->
+        <textColor>ffffff</textColor>
+        <iconColor>ffffff</iconColor>
+    </helpsystem>
+		
+	<text name="md_name">
+	    <color>ffffff</color>
+        <pos>0.034 0.05</pos>
+	    <fontPath>./_art/Acre.otf</fontPath>
+        <fontSize>0.034</fontSize>
+        <size>0.92 0.10</size>
+		<forceUppercase>1</forceUppercase>
+        <alignment>left</alignment>
+    </text>
+	
+    <video name="md_video">
+        <origin>0.5 0.5</origin>
+        <pos>0.74 0.38</pos>
+        <maxSize>0.4 0.5</maxSize>
+		<delay>1</delay>
+        <zIndex>50</zIndex>
+		<effect>none</effect>
+	</video>
+		
+	<image name="logo">
+	    <color>00000000</color>
+	    <path>./assets/box.png</path>
+		<pos>1 1</pos>
+	</image>
+
+    <gridtile name="default">
+        <backgroundColor>FFFFFF00</backgroundColor>
+        <backgroundCornerSize>9 9</backgroundCornerSize>
+        <selectionMode>image</selectionMode>
+        <padding>5 5</padding>
+    </gridtile>
+	
+    <text name="md_description">
+		<fontPath>./_art/Acre.otf</fontPath>
+	    <color>FFFFFF99</color>
+        <fontSize>0.03</fontSize>
+	    <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <lineSpacing>1</lineSpacing>
+	    <pos>0.034 0.15</pos>
+	    <size>0.464 0.464</size>
+    </text>
+	
+	<text name="md_lbl_releasedate">
+		 <visible>false</visible>  
+    </text>
+	
+    <datetime name="md_releasedate">
+		 <visible>false</visible>
+    </datetime>
+	 
+    <text name="md_lbl_rating">
+		 <visible>false</visible>
+    </text>  
+	 
+    <rating name="md_rating">
+		 <visible>false</visible>
+    </rating>
+	
+    <text name="md_lbl_players">
+		 <visible>false</visible>
+    </text>
+     
+	<text name="md_players">
+		 <visible>false</visible>
+    </text>
+	
+    <image name="md_marquee">
+		 <visible>false</visible>
+    </image>
+	
+    </view>
+
+   <feature supported="video">
+    <view name="video">
+        <video name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.66 0.42</pos>
+            <maxSize>0.5 0.6</maxSize>
+            <delay>1.5</delay>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+			<effect>none</effect>
+        </video>
+    </view>
+   </feature>
+
+   <view name="screen">
+   
+    <text name="clock">
+      <color>FFFFFF</color>
+      <fontSize>0.035</fontSize>
+      <pos>0.910 0.850</pos>
+      <size>0.09 0.058</size>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+	
+  </view>
+	
+</theme>

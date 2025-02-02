@@ -1,0 +1,71 @@
+<!--
+Theme name:  Epic Noir
+Artwork by:  Nico La Rosa (Chicuelo) 
+Coding by:   Nick L (c64-dev)
+Website:     www.chicuelo.com.ar
+Fonts used:  Acre Medium & Bebas Neue Bold
+
+# Thanks and Credits
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+  	<variables>
+	    <fullscreenfixSubsetname>Emulationstation Screen Size</fullscreenfixSubsetname>
+	    <SystemviewSubsetName>System Scroll View</SystemviewSubsetName>
+		<controllerSubsetName>Show Controllers</controllerSubsetName>
+		<shortdescriptionSubsetName>Show Short Description</shortdescriptionSubsetName>
+	</variables>
+	
+	<subset name="fullscreenfix" displayName="${fullscreenfixSubsetname}">
+        <include name="ES Header" displayName="${ES Header}">./header.xml</include>
+        <include name="ES Fullscreen" displayName="${ES Fullscreen}">./fullscreen.xml</include>
+		<include name="4:3" displayName="${4:3}">./fullscreenv.xml</include>
+    </subset>
+	
+	<subset name="Systemview" displayName="${SystemviewSubsetName}">
+        <include name="Vertical" displayName="${Vertical}">./_art/systemview/vertical.xml</include>
+        <include name="Horizontal" displayName="${Horizontal}">./_art/systemview/horizontal.xml</include>
+    </subset>
+	
+	<subset name="controller" displayName="${controllerSubsetName}">
+        <include name="on" displayName="${on}"/>
+        <include name="off" displayName="${off}">./_art/settings/controllers.xml</include>
+    </subset>
+	
+	<subset name="shortdescription" displayName="${shortdescriptionSubsetName}">
+        <include name="on" displayName="${on}"/>
+        <include name="off" displayName="${off}">./_art/settings/shortdescription.xml</include>
+    </subset>
+	
+  <view name="menu">
+  
+    <menuBackground name="menubg">
+	 <color>202020</color>
+    </menuBackground>
+	
+	<menuText name="menutext, menutitle">
+	  <fontPath>./_art/Acre.otf</fontPath>
+	  <fontSize>.038</fontSize>
+	  <color>ffffff</color>
+	</menuText>
+	
+	<menuText name="menufooter, menutextsmall">
+      <fontPath>./_art/Acre.otf</fontPath>
+      <fontSize>.029</fontSize>		 
+      <color>ffffff</color>
+    </menuText>
+	
+	<menuTextEdit name="menutextedit">
+      <inactive>./_art/assets/textinput_inactive.png</inactive>
+      <active>./_art/assets/textinput_active.png</active>
+    </menuTextEdit>
+	
+  </view>
+	
+</theme>

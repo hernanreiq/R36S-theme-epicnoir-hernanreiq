@@ -1,0 +1,51 @@
+<!--
+Theme name:  Epic Noir
+Artwork by:  Nico La Rosa (Chicuelo) 
+Coding by:   Nick L (c64-dev)
+Website:     www.chicuelo.com.ar
+Fonts used:  Acre Medium & Bebas Neue Bold
+
+# Thanks and Credits
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+
+<view name="basic, detailed, video">
+
+    <image name="background" extra="true">
+        <tile>false</tile>
+        <path>./_art/ingame-global-bg.jpg</path>
+        <size>1 1</size>
+        <pos>0 0</pos>
+    </image>
+
+    <textlist name="gamelist">
+        <selectorColor>1c1c1c</selectorColor>
+        <selectedColor>ffffff</selectedColor>
+        <selectorHeight>0.07</selectorHeight>
+        <primaryColor>585858</primaryColor>
+        <secondaryColor>888888</secondaryColor>
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <pos>0 0.0833</pos>
+	    <size>0.323 0.8513</size>
+        <fontSize>0.03</fontSize>
+        <lineSpacing>1.683</lineSpacing>
+        <horizontalMargin>0.02864</horizontalMargin>
+    </textlist>
+	
+    <text name="top_label" extra="true">
+        <pos>0.029 0</pos>
+    </text>
+	
+        
+</view>
+
+	
+</theme>

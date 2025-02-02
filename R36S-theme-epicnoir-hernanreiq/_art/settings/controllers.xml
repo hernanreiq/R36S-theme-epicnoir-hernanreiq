@@ -1,0 +1,24 @@
+<!--
+Theme name:  Epic Noir
+Artwork by:  Nico La Rosa (Chicuelo) 
+Coding by:   Nick L (c64-dev)
+Website:     www.chicuelo.com.ar
+Fonts used:  Acre Medium & Bebas Neue Bold
+
+# Thanks and Credits
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+-->
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="system">
+    <image name="controller" extra="true">
+      <visible>false</visible>
+    </image>
+</view>
+
+</theme>
