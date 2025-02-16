@@ -130,14 +130,14 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <textlist name="gamelist">
         <selectorColor>1c1c1c</selectorColor>
         <selectedColor>ffffff</selectedColor>
-        <selectorHeight>0.07</selectorHeight>
+        <selectorHeight>0.05</selectorHeight>
         <primaryColor>585858</primaryColor>
         <secondaryColor>888888</secondaryColor>
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
         <pos>0 0.0833</pos>
-	    <size>0.323 0.8513</size>
-        <fontSize>0.03</fontSize>
+	    <size>0.40 0.8513</size>
+        <fontSize>0.025</fontSize>
         <lineSpacing>1.683</lineSpacing>
         <horizontalMargin>0.02864</horizontalMargin>
     </textlist>
@@ -149,7 +149,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <iconColor>ffffff</iconColor>
     </helpsystem>
     
-    <text name="top_label" extra="true">
+    <!-- <text name="top_label" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
         <text>Select Game</text>
         <alignment>left</alignment>
@@ -158,7 +158,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <fontSize>0.034</fontSize>
         <origin>0 0</origin>
         <size>0.20 0.08</size>
-    </text>
+    </text> -->
     
     <text name="nameLabel" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
@@ -167,7 +167,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <color>ffffff</color>
         <fontSize>0.036</fontSize>
         <origin>0 0</origin>
-        <pos>0.429 0</pos>
+        <pos>0.46 0</pos>
         <size>0.40 0.075</size>
     </text>
 
@@ -178,7 +178,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	    <alignment>left</alignment>
         <forceUppercase>0</forceUppercase>
         <lineSpacing>1</lineSpacing>
-	    <pos>0.429 0.787</pos>
+	    <pos>0.46 0.787</pos>
 	    <size>0.464 0.1111</size>
     </text>
     
@@ -195,7 +195,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <fontSize>0.02</fontSize>
         <color>ffffff</color>
         <origin>0 0</origin>
-        <pos>0.429 0.630</pos>
+        <pos>0.46 0.630</pos>
         <size>0.06 0.2</size>
     </text> 
         
@@ -233,7 +233,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <image name="md_image">
         <tile>false</tile>
         <origin>0.5 0.5</origin>
-        <pos>0.66 0.42</pos>
+        <pos>0.70 0.42</pos>
         <maxSize>0.5 0.6</maxSize>
     </image>
 </view>
